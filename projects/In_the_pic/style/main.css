@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.bgc-img {
+    background-size: 100% 100%;
+    background-image: url("/projects/In_the_pic/img/bcg.jpg")
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    padding-top: 5px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(61, 64, 65);
+    margin: auto;
+    display: inline;
+}
+
+h1::selection {
+    color: lightcoral;
+}
+
+.image {
+    height: 250px;
+    width: 350px;
+    border-radius: 20%;
+    margin: auto;
+    border: solid rgb(78, 222, 233);
+}
+
+.answer {
+    background-color: rgb(240, 171, 213);
+    width: 350px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 10px;
+    bottom: 50px;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: solid rgb(182, 234, 238);
+    border-width: 5px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.answer:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    background-color: rgb(225, 159, 241);
+}
+
+.score {
+    background-color: rgb(236, 247, 246);
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: solid rgb(240, 171, 213);
+}
+
+.score span {
+    color: rgb(240, 171, 213);
+}
+
+.play {
+    background-color: rgb(169, 255, 248);
+    padding: 5px;
+    width: 250px;
+    height: 150px;
+    font-size: 80px;
+    border-radius: 20px;
+    border: solid rgb(240, 171, 213);
+    font-family: 'Indie Flower', cursive;
+    margin-top: 10px;
+    outline: none;
+}
+
+.play:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: rgb(129, 250, 146);
+}
+
+.modal {
+    background-color: rgb(169, 255, 248);
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: solid rgb(240, 171, 213);
+}
+
+.footer {
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(199, 239, 247);
+    margin: 10px;
+}
+
+.full-screen {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(90, 90, 90, 0.856);
+    position: fixed;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-win {
+    display: none;
+    font-size: 85px;
+    width: 20vw;
+    height: 20vh;
+    background-color: green;
+}

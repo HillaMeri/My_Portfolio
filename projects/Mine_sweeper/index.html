@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mine Sweeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body onload="init()">
+    <h1 class="title">Mine Sweeper💣</h1>
+    <div class="score">
+        <label id="score Easy">Easy Record: <span></span> || </label>
+        <label id="score Hard">Hard Record: <span></span> || </label>
+        <label id="score Extrenel">Extrenel Record: <span></span></label>
+    </div>
+    <div class="save-btns">
+        <button class="clear-score save" onclick="clearScore()">Clear Records</button>
+        <button class="save-game save" onclick="saveGame('game','board','level','time')">SAVE GAME</button>
+        <button class="open-save-game save" onclick="openSaveGame('game','board','level','time')">LOAD GAME</button>
+    </div>
+    
+    <fieldset>
+        <input type="radio" onclick="init(4)" id="levelChoice1" name="level">
+        <label for="levelChoice1">Easy(4)</label>
+        <input type="radio" onclick="init(8)" id="levelChoice2" name="level">
+        <label for="levelChoice2">Hard(8)</label>
+        <input type="radio" onclick="init(12)" id="levelChoice3" name="level">
+        <label for="levelChoice3">Extrenel!(12)</label>
+    </fieldset>
+
+    <div class="modal-live heartbeat"></div>
+
+    <div class="data">
+        <label class="func time"> Game Time:</label>
+        <label class="func number"></label>
+    </div>
+
+    <div class="hints"></div>
+
+    <table><tbody class="board"></tbody></table>
+    
+    <button class="btn-dec safe-click" onclick="markSafeClick()">🤞🤞🤞</button>
+    <button class="new-game btn-dec" onclick="newGame()">😄</button>
+    <button class="undo btn-dec" onclick=goBack()>↪</button>
+
+    <button class="manually btn-dec" onclick="manuallyPositionClicked()">Manually</button>
+    <div class="modal-mines-manually rotate-center"></div>
+
+    <div class="modal-break-recored scale-up-center"></div>
+    
+    <audio class="mine-sound" src="audio/mine2.mp3"></audio>
+    <audio class="victory-sound" src="audio/victory.mp3"></audio>
+    
+    <script src=" js/utils.js"></script>
+    <script src=" js/game.js"></script>
+    <script src=" js/clicks.js"></script>
+    <script src=" js/time.js"></script>
+    <script src=" js/hints.js"></script>
+    <script src=" js/render.js"></script>
+    <script src=" js/score.js"></script>
+    <script src=" js/manually.js"></script>
+    <script src=" js/mines.js"></script>
+    <script src=" js/savegame.js"></script>
+</body>
+
+</html>

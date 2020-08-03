@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TOUCH NUMBERS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body onload="init()">
+    <div class="bgc-img">
+    <h1 class="title">TOUCH NUMBERS</h1>
+
+    <button class="new-game" onclick=init()>New Game </button>
+    <div class="data">
+        <label class="time"> Game Time: </label> 
+        <label class='number'></label>
+    </div>
+    <fieldset class="choose-level">
+        <legend>Choose Level Game</legend>
+        <input onclick="selectLevel(this)" type="radio" name="level" id="EAZY_SIZE">
+        <label for="Easy">Easy(16)</label><br />
+        <input onclick="selectLevel(this)" type="radio" name="level" id="HARD_SIZE">
+        <label for="Hard">Hard(25)</label><br />
+        <input onclick="selectLevel(this)" type="radio" name="level" id="EXTERNAL_SIZE">
+        <label for="Extrenel">Extrenel!(36)</label>
+    </fieldset>
+    
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+
+    <div class="modal">
+        <h3></h3>
+    </div>
+    <h4 class="footer">🎗COPYRIGHT © Hilla Meri🎗</h4>
+</div>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

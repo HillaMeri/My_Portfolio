@@ -1,0 +1,133 @@
+body {
+    text-align: center;
+    font-family: 'Rowdies', cursive;
+}
+
+.bgc-img {
+    background-size: 100% 100%;
+    background-image: url("/projects/Touch_the_nums/imgs/bcg4.jpg");
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.new-game {
+    padding: 0.3em 1.2em;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(243, 120, 206);;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
+    margin-bottom: 10px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    border: solid rgb(165, 213, 241);
+}
+
+.new-game:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+    background-color: rgb(192, 195, 196);
+}
+
+.data {
+    margin-top: 20px;
+}
+
+.time {
+    background-color: rgb(111, 116, 108);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    border-style: double;
+    padding: 5px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.number {
+    background-color: rgb(111, 116, 108);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    border-style: double;
+    padding: 5px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+
+fieldset {
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-image: initial;
+    margin: 20px;
+    border-style: double;
+    width: 300px;
+    height: 85px;
+    display: inline;
+    background-color: #9eddf1;
+    border-width: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.cell {
+    background-color: rgb(253, 147, 209);
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 5px;
+    margin: 20px;
+    box-shadow: 5px 10px #888888;
+}
+
+.cell:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.clicked-Cell {
+    background-color: rgb(165, 233, 211);
+    font-size: 40px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.modal {
+    background-color:  #9eddf1;
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 350px;
+    height: 300px;
+    font-size: 40px;
+    border-radius: 20px;
+    border: 10px solid rgb(230, 230, 231);
+}
+
+.footer {
+    text-align: center;
+    background-color: #9eddf1;
+}
