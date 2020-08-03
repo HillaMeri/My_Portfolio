@@ -1,8 +1,16 @@
 console.log('Starting up');
+$(document).ready(onInit);
 
 function onInit() {
   renderProjects();
   // renderModals();
+  $('.submit-mail').click(function(){
+    var email = $('.email-add').val();
+    var subject = $('.email-subject').val();
+    var messBody = $('.email-mess-body').val();
+    if(!subject || !messBody) return;
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=hilla7070@gmail.com&su=${subject}&body=${messBody}`);
+  })
 }
 
 function renderProjects() {
@@ -28,7 +36,6 @@ function renderProjects() {
           </button>
           <div class="portfolio-caption">
             <h4>${project.name}</h4>
-            <p class="text-muted">Illustration</p>
           </div>
         </div>`
   })
@@ -38,9 +45,14 @@ function renderProjects() {
 function openModal(id) {
   var project = findProject(id);
   $('.portfolio-modal h2').text(project.name);
-  $('.img-fluid').attr("src", `img/portfolio/${id}-full.png`);
+  $('.modal-body .img-fluid').attr("src", `img/portfolio/${id}-full.png`);
   $('.modal-body p').text(project.desc);
   $('.date').text(`Date: ${project.publishAt}`);
   $('.modal-body a').attr("href", `projects/${id}/index.html`);
   $('.modal-body a').text(project.name);
+}
+
+
+function onSendEmail(){
+  
 }
